@@ -1,23 +1,54 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Background">
+        <div className="App-Frame">
+
+          <header className="App-header">
+            <div className="app-title">
+              <h3>Evolutionary Dynamics</h3>
+            </div>
+          </header>
+
+          <hr className="divider"></hr>
+
+          <body className="App-body">
+            
+            <div className="body file">
+              <fieldset>
+                <legend>Load a file</legend>
+                <label>Select File:</label>
+                <input></input>
+                <button>Browse</button>
+                
+                <label>File:</label>
+              </fieldset>
+            </div>
+
+            <div className="body plot">
+              <fieldset>
+                <legend>Frequency plot</legend>
+              </fieldset>
+            </div>
+
+            <div className="body filter">
+              <fieldset>
+                <legend>Pre-filtering</legend>
+              </fieldset>
+            </div>
+
+            <div className="body cluster">
+              <fieldset>
+                <legend>Clustering</legend>
+              </fieldset>
+            </div>
+
+          </body>
+
+        </div>
+      </div>
     </div>
   );
 }
